@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ document_type }}</h1>
+    <p>Odpowiedz na pytania, aby przygotować szkic dokumentu.</p>
+
+    <form>
+        <label>Opisz swoją sprawę:</label>
+        <textarea rows="6" style="width:100%;"></textarea>
+        <button type="button">Generuj szkic</button>
+    </form>
+</div>
+{% endblock %}
