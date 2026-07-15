@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Dokumenty sprawy</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="document">
+        <button type="submit">Dodaj dokument</button>
+    </form>
+
+</div>
+{% endblock %}
