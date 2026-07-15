@@ -1,0 +1,8 @@
+{
+  "name": "LexFlow",
+  "short_name": "LexFlow",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "AI assisted legal document platform"
+}
