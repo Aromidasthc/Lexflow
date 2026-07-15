@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Nowy dokument</h1>
+    <form method="post">
+        <label>Wybierz rodzaj dokumentu:</label>
+        <select name="document_type">
+            <option>Odpowiedź na pozew</option>
+            <option>Wniosek</option>
+            <option>Zażalenie</option>
+            <option>Inne</option>
+        </select>
+        <button type="submit">Dalej</button>
+    </form>
+</div>
+{% endblock %}
