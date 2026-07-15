@@ -2,16 +2,25 @@
 
 {% block content %}
 <div class="container">
-    <h1>Nowy dokument</h1>
+    <h1>Nowa sprawa</h1>
+
     <form method="post">
-        <label>Wybierz rodzaj dokumentu:</label>
+        <label>Rodzaj dokumentu:</label>
         <select name="document_type">
             <option>Odpowiedź na pozew</option>
             <option>Wniosek</option>
             <option>Zażalenie</option>
             <option>Inne</option>
         </select>
-        <button type="submit">Dalej</button>
+
+        <input name="name" placeholder="Imię i nazwisko">
+        <input name="court" placeholder="Sąd">
+        <input name="case_number" placeholder="Sygnatura sprawy">
+
+        <textarea name="description" placeholder="Opisz swoją sprawę"></textarea>
+        <textarea name="evidence" placeholder="Twoje dowody"></textarea>
+
+        <button type="submit">Utwórz szkic</button>
     </form>
 </div>
 {% endblock %}
