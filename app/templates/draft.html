@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Szkic dokumentu</h1>
+
+    <h3>{{ draft.type }}</h3>
+
+    <pre>{{ draft.content }}</pre>
+
+    <p>Data utworzenia: {{ draft.created }}</p>
+</div>
+{% endblock %}
